@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/YoutubeThumbnailChecker/static/css/main.2d42ffee.css",
+    "main.js": "/YoutubeThumbnailChecker/static/js/main.dcae47aa.js",
+    "index.html": "/YoutubeThumbnailChecker/index.html",
+    "main.2d42ffee.css.map": "/YoutubeThumbnailChecker/static/css/main.2d42ffee.css.map",
+    "main.dcae47aa.js.map": "/YoutubeThumbnailChecker/static/js/main.dcae47aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d42ffee.css",
+    "static/js/main.dcae47aa.js"
+  ]
+}
