@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .font-roboto {
+    font-family: "Roboto", Arial, sans-serif;
+  }
+}
