@@ -2,9 +2,16 @@ import { useState } from "react";
 
 const YouTubeThumbnailName = () => {
   const [textInput, setTextInput] = useState("");
+  const maxLength = 70;
 
   const handleTextInputChange = (event) => {
-    setTextInput(event.target.value.slice(0, 100));
+    const inputText = event.target.value;
+    if (inputText.length <= maxLength) {
+      setTextInput(inputText);
+    } else {
+      // Обрезаем текст до максимальной длины и добавляем троеточие
+      setTextInput(inputText.slice(0, maxLength) + "...");
+    }
   };
   return (
     <div className="font-roboto">
@@ -15,10 +22,8 @@ const YouTubeThumbnailName = () => {
         <textarea
           value={textInput}
           onChange={handleTextInputChange}
-          rows={2}
           className="mt-2 px-2 py-1 w-[300px] max-h-[4.4rem] overflow-hidden leading-[25px] overflow-y-none bg-transparent font-medium white resize-none text-white text-base  "
           placeholder="Thumbnail Name"
-          maxLength={140}
         />
 
         <div className=" ml-12 font-norma text-sm text-[#9e9e9e]">

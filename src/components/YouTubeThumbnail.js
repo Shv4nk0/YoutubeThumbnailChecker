@@ -52,7 +52,7 @@ const YouTubeThumbnail = () => {
       onDrop={handleDrop}
     >
       {backgroundImage && (
-        <div className="absolute bottom-1 right-1 p-1 bg-black rounded-md bg-opacity-70">
+        <div className="absolute bottom-1 right-1 p-1 py-0.5 bg-black rounded-md bg-opacity-80">
           <div className="text-white  text-xs font-roboto tracking-widest font-semibold">
             {" "}
             12:34{" "}
